@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Social links profile</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: hsl(0, 0%, 8%);
+  }
+
+  #profile-container {
+      width: 300px;
+      background-color:hsl(0, 0%, 12%);
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds a subtle shadow */
+      margin: auto;
+  }
+
+
+  #profile-photo {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 120px;
+    height: 120px;
+    border-radius: 100%; /* Creates the circle shape */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    border: 3px solid #555; /* Optional: Adds a border around the photo */
+
+    margin: 20px auto;
+  }
+
+  #name{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    display: block;
+    margin: 20px;
+  }
+
+  #address{
+    text-align: center;
+    color:  hsl(75, 94%, 57%);
+    font-weight: bold;
+    display: block;
+    margin: 20px;
+   
+  }
+
+  #self-detail{
+    text-align: center;
+    display: block;
+    color: white;
+  }
+
+  .links {
+    width: 80%;
+    background-color: hsl(0, 0%, 20%);
+    color: white;
+    font-weight: bold;
+    margin: 20px auto; /* Keeps the links centered horizontally */
+    padding: 10px 0; /* Adjust padding as needed for better spacing */
+    border-radius: 2%;
+    display: flex; /* Changed from block to flex */
+    align-items: center; /* Centers content vertically within the container */
+    justify-content: center; /* Centers content horizontally within the container */
+    text-decoration: none; 
+}
+
+  .links{
+
+    width: 80%;
+    height: 5%;
+    background-color: hsl(0, 0%, 20%);
+    color:white;
+    font-weight: bold;
+    margin: 20px auto;
+    border-radius: 10px;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    text-decoration: none; 
+    text-align: center;
+  }
+ 
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+<div id="profile-container">
+  <img src="assets/images/avatar-jessica.jpeg" id="profile-photo">
+  <span id="name">Jessica Randall</span>
+  <span id="address">London, United Kingdom</span>
+  <span id="self-detail">  "Front-end developer and avid reader."</span>
+  <a href="https://github.com" class="links">GitHub</a>
+  <a href="https://www.frontendmentor.io/home" class="links">  Frontend Mentor</a>
+  <a href="https://www.linkedin.com/" class="links">  LinkedIn</a>  
+  <a href="https://twitter.com/" class="links">Twitter</a>
+  <a href="instagram" class="links">Instgram</a>
+
+</div>
+</body>
+</html>
